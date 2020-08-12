@@ -1,0 +1,227 @@
+.bgcolor {
+  background-color: #34547a;
+}
+
+html {
+  font-family: Roboto sans-serif;
+  font-size: 10px;
+}
+
+a:hover,
+a:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+a.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+a.navbar-brand {
+  font-family: "Revalia", cursive;
+  font-size: 4.8rem;
+}
+
+a.navbar-brand-two {
+  font-family: "Revalia", cursive;
+  font-size: 2.8rem;
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.main-text {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #727272;
+}
+
+.h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 7.9rem;
+}
+
+h2.h2 {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  text-align: center;
+}
+
+h3.h3 {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+
+.line {
+  background: #34547a;
+  padding: 10rem 0px;
+}
+
+.statistic .st-item {
+  padding: 10px;
+}
+
+.statistic .st-item__img .st-item__img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.statistic .st-item__text .st-item__text {
+  font-family: Roboto sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+}
+
+.skills {
+  padding: 4rem;
+}
+
+.skills__item .skills__line {
+  margin-top: 10px;
+  position: relative;
+}
+
+.skills__item .skills__line .skills__line-bg {
+  left: 0;
+  top: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #c4c4c4;
+  width: 90%;
+  height: 0.2rem;
+}
+
+.skills__item .skills__line .skills__line-main {
+  position: relative;
+  z-index: 100;
+  width: 70%;
+  height: 0.2rem;
+  background-color: #34547a;
+}
+
+.myimg {
+  width: 100%;
+  height: 100px;
+}
+
+.portfolio-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 5fr 1fr;
+      grid-template-rows: 5fr 1fr;
+      grid-template-areas: "img img img img" "img img img img" "img img img img" "img img img img" "img img img img" "b b b b";
+}
+
+.brand {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: b;
+}
+
+.protfolio {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: img;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+}
+
+img.portf-item__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: relative;
+}
+
+.portf-item {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portf-item:hover .portf-item__bg {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+.portf-item__bg {
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.portf-item__bg:before {
+  position: relative;
+  top: 40%;
+  left: 40%;
+  content: url(/img/view.png);
+}
+
+.footer {
+  width: 100vw;
+  padding: 50px;
+}
+
+@media screen and (max-device-width: 576px) {
+  .line {
+    padding: 0px;
+  }
+  .line .st-item__img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .portf-item__bg:before {
+    top: 25%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-device-width: 1200px) {
+  .protfolio {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
