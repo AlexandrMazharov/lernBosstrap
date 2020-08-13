@@ -133,7 +133,12 @@ h3.h3 {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 5fr 1fr;
       grid-template-rows: 5fr 1fr;
-      grid-template-areas: "img img img img" "img img img img" "img img img img" "img img img img" "img img img img" "b b b b";
+      grid-template-areas: "img img img img"
+ "img img img img"
+ "img img img img"
+ "img img img img"
+ "img img img img"
+ "b b b b";
 }
 
 .brand {
@@ -196,7 +201,7 @@ img.portf-item__img {
   position: relative;
   top: 40%;
   left: 40%;
-  content: url(/img/view.png);
+  content: url(https://github.com/AlexandrMazharov/lernBosstrap/blob/master/img/view.png?raw=true);
 }
 
 .footer {
