@@ -201,7 +201,7 @@ img.portf-item__img {
   position: relative;
   top: 40%;
   left: 40%;
-  content: url(https://github.com/AlexandrMazharov/lernBosstrap/blob/master/img/view.png?raw=true);
+  content: url(/img/view.png);
 }
 
 .footer {
