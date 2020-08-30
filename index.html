@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link rel="stylesheet" href="./fullpage/fullpage.css" />
+
+    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Revalia&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- mystyle -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -20,9 +25,10 @@
   </head>
   <body>
     <div id="fullpage">
-      <div class="section">
+      <!-- main -->
+      <div class="section" id="main">
         <div class="container-fluid bg-light h100vh">
-          <div class="container h100 d-flex flex-column">
+          <div class="container h-100 d-flex flex-column">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="d-flex flex-grow-1">
                 <span class="w-100 d-lg-none d-block"
@@ -53,21 +59,27 @@
               >
                 <ul class="navbar-nav ml-auto flex-nowrap">
                   <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item nav-active"
+                    <a href="#main" class="nav-link m-2 menu-item nav-active"
                       >Главная</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">ОБ авторе</a>
+                    <a href="#about" class="nav-link m-2 menu-item">
+                      Об авторе</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">работы</a>
+                    <a href="#works" class="nav-link m-2 menu-item"> Работы</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Процесс</a>
+                    <a href="#progress" class="nav-link m-2 menu-item">
+                      Процесс</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Контакты</a>
+                    <a href="#contacts" class="nav-link m-2 menu-item">
+                      Контакты</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -313,6 +325,7 @@
                   </defs>
                 </svg>
               </div>
+
               <div class="col-md-6 d-flex flex-column justify-content-center">
                 <h1 class="h1 align-self-center">Дизайн и верстка</h1>
                 <p class="main-text align-self-center">
@@ -328,9 +341,9 @@
           </div>
         </div>
       </div>
-      <!-- slide2 -->
-      <div class="section d-flex align-items-end">
-        <div class="d-flex flex-column justify-content-end h100">
+      <!-- about me -->
+      <div id="about" class="section d-flex align-items-end">
+        <div class="d-flex flex-column justify-content-end h-100">
           <div
             class="about flex-grow-1 d-flex justify-content-center flex-column"
           >
@@ -431,12 +444,12 @@
           </div>
         </div>
       </div>
-      <!-- skills -->
-      <div class="section">
+      <!-- works -->
+      <div id="works" class="section">
         <div class="container">
           <div class="row">
             <div
-              class="col-md-6 col-10 skills d-flex flex-column justify-content-center"
+              class="col-md-6 col-10 skills d-flex flex-column justify-content-center mx-auto"
             >
               <div class="skills__title">
                 <h2 class="h2">Мои навыки</h2>
@@ -466,17 +479,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-10">
+            <div class="col-md-6 col-10 mx-auto">
               <img src="./img/Rectangle 3.png" alt=" " class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
       <!-- how i work -->
-      <div class="section bg-light">
-        <div class="container h100 d-flex flex-column justify-content-between">
+      <div id="progress" class="section bg-light">
+        <div class="container h-100 d-flex flex-column justify-content-between">
           <div
-            class="how-work__text h100 d-flex flex-column justify-content-center align-items-center"
+            class="how-work__text h-100 d-flex flex-column justify-content-center align-items-center"
           >
             <h2 class="h2">Как я работаю</h2>
 
@@ -492,7 +505,8 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <!-- portfolio -->
+      <div id="portfolio" class="section">
         <div class="portfolio-page">
           <ul class="list-unstyled protfolio">
             <li class="portf-item">
@@ -544,51 +558,15 @@
               <div class="portf-item__bg"></div>
             </li>
           </ul>
-
-          <!-- <div class="container brand">
-            <ul class="list-unstyled d-flex">
-              <li>
-                <img
-                  src="./img//Rectangle 9.png"
-                  alt="brand"
-                  class="img-fluid"
-                />
-              </li>
-              <li>
-                <img
-                  src="./img//Rectangle 9.png"
-                  alt="brand"
-                  class="img-fluid"
-                />
-              </li>
-              <li>
-                <img
-                  src="./img//Rectangle 9.png"
-                  alt="brand"
-                  class="img-fluid"
-                />
-              </li>
-              <li>
-                <img
-                  src="./img//Rectangle 9.png"
-                  alt="brand"
-                  class="img-fluid"
-                />
-              </li>
-            </ul>
-          </div> -->
         </div>
       </div>
-      <div class="section">
+      <!-- contacts -->
+      <div id="contacts" class="section">
         <div
-          class="container h-100 d-flex justify-content-between flex-column align-items-center"
+          class="container h-100 d-flex justify-content-around flex-column align-items-center"
         >
-          <div
-            class="row col-10 col-lg-6 d-flex flex-column justify-content-center"
-          >
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-            >
+          <div class="row">
+            <div class="mx-auto col-10">
               <h2 class="h2">Хотите веб-сайт?</h2>
               <div class="main-text">
                 /* Lorem Ipsum - это текст-"рыба", часто используемый в печати и
@@ -596,67 +574,66 @@
                 текстов на латинице с начала XVI века. */
               </div>
             </div>
-            <form
-              class="needs-validation d-flex flex-column justify-content-center"
-              novalidate
-            >
-              <div class="form-row py-2">
-                <div class="col-md-6 mb-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="validationTooltip01"
-                    value="Name"
-                    placeholder="col-form-label-lg"
-                    required
-                  />
-                  <div class="valid-tooltip">
-                    Correct name!
-                  </div>
-                </div>
-                <div class="col-md-6 mb-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="col-form-label-lg"
-                    id="validationTooltip02"
-                    value="EMAIL"
-                    required
-                  />
-                  <div class="valid-tooltip">
-                    CORRECT EMAIL
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-12 py-2 mb-3">
-                  <textarea
-                    class="form-control"
-                    id="validationTextarea"
-                    placeholder="Messege"
-                    rows="5"
-                    required
-                  ></textarea>
-                  <div class="invalid-tooltip">
-                    Please provide a valid messege.
-                  </div>
-                </div>
-              </div>
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </form>
           </div>
-          <div class="footer bgcolor">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="title">
-                <h3 class="h3">Иванов Иван</h3>
-                <p class="main-text" style="color: white;">
-                  2020 Все права защищены
-                </p>
-              </div>
-              <div class="img">
-                <img src="/img/Group.png" alt="vk" />
-                <img src="/img/Group.png" alt="vk" />
-                <img src="/img/Group.png" alt="vk" />
+          <div class="row w-100">
+            <!-- </div> -->
+            <div class="mx-auto col-10">
+              <form class="">
+                <div class="form-row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="exampleFormControlInput1"
+                        placeholder="name@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput2">Name</label>
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="exampleFormControlInput2"
+                        placeholder="Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <div class="form-group w-100">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="exampleFormControlTextarea1"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="footer bgcolor">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="title">
+                  <h3 class="h3">Иванов Иван</h3>
+                  <p class="main-text" style="color: white">
+                    2020 Все права защищены
+                  </p>
+                </div>
+                <div class="img">
+                  <img src="/img/Group.png" alt="vk" />
+                  <img src="/img/Group.png" alt="vk" />
+                  <img src="/img/Group.png" alt="vk" />
+                </div>
               </div>
             </div>
           </div>

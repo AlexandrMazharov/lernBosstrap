@@ -1,7 +1,7 @@
 $action-color: #34547a;
 $bg-color: #eeeff1;
 .bgcolor {
-  background-color:$action-color;
+  background-color: $action-color;
 }
 html {
   font-family: Roboto sans-serif;
@@ -29,9 +29,7 @@ a.navbar-brand-two {
 .h100vh {
   height: 100vh;
 }
-.h100 {
-  height: 100%;
-}
+
 .main-text {
   font-size: 1.6rem;
 
@@ -135,20 +133,6 @@ h3.h3 {
 }
 // how i work
 
-.how-work {
-  &__text {
-    .how-work__title {
-      .h2 {
-      }
-    }
-    .main-text {
-    }
-  }
-  &__img {
-    img {
-    }
-  }
-}
 .portfolio-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -204,11 +188,10 @@ img.portf-item__img {
   position: relative;
   top: 40%;
   left: 40%;
-
   content: url(/img/view.png);
 }
 ////////// foter
-.footer{
+.footer {
   width: 100vw;
   padding: 50px;
 }
